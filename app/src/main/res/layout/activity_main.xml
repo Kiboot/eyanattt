@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:freezesText="true"
+        android:text="reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_replay"
+        android:layout_width="126dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:freezesText="true"
+        android:text="Play Again"
+        app:layout_constraintBottom_toTopOf="@id/AI_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <Button
+        android:id="@+id/AI_button"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
+        android:freezesText="true"
+        android:text="A.I  VS  A.I"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_p1"
+        android:layout_width="162dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:freezesText="true"
+        android:text="Your score:0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_replay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_p2"
+        android:layout_width="179dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:freezesText="true"
+        android:text="AI score:0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/AI_button"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_p1" />
+
+
+    <Button
+        android:id="@+id/button_00"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:drawable/presence_online"
+        android:tag="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_10"
+        app:layout_constraintEnd_toStartOf="@+id/button_01"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_01"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:background="@android:drawable/presence_online"
+        android:tag="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_11"
+        app:layout_constraintEnd_toStartOf="@+id/button_02"
+        app:layout_constraintStart_toEndOf="@+id/button_00" />
+
+
+    <Button
+        android:id="@+id/button_02"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/presence_online"
+        android:tag="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_01" />
+
+
+    <Button
+        android:id="@+id/button_10"
+        android:layout_width="124dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/presence_online"
+        android:tag="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_20"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_11"
+        android:layout_width="126dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/presence_online"
+        android:tag="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_21"
+        app:layout_constraintEnd_toStartOf="@+id/button_12"
+        app:layout_constraintStart_toEndOf="@+id/button_10" />
+
+    <Button
+        android:id="@+id/button_12"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/presence_online"
+        android:tag="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_22"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/button_20"
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/presence_online"
+        android:tag="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_21"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_21"
+        android:layout_width="121dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/presence_online"
+        android:tag="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_22"
+        app:layout_constraintStart_toEndOf="@+id/button_20" />
+
+    <Button
+        android:id="@+id/button_22"
+        android:layout_width="122dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:drawable/presence_online"
+        android:tag="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_21" />
+</android.support.constraint.ConstraintLayout>
