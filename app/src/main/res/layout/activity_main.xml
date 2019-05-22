@@ -5,6 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F7DC"
     android:orientation="vertical"
     android:overScrollMode="never"
     tools:context=".MainActivity">
@@ -79,115 +80,130 @@
         app:layout_constraintTop_toBottomOf="@+id/text_view_p1" />
 
 
-    <Button
-        android:id="@+id/button_00"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="8dp"
-        android:background="@android:drawable/presence_online"
-        android:tag="0"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_10"
-        app:layout_constraintEnd_toStartOf="@+id/button_01"
-        app:layout_constraintStart_toStartOf="parent" />
+    <TableLayout
+        android:layout_width="400dp"
+        android:layout_height="489dp"
 
-    <Button
-        android:id="@+id/button_01"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:background="@android:drawable/presence_online"
-        android:tag="0"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_11"
-        app:layout_constraintEnd_toStartOf="@+id/button_02"
-        app:layout_constraintStart_toEndOf="@+id/button_00" />
-
-
-    <Button
-        android:id="@+id/button_02"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginEnd="8dp"
-        android:background="@android:drawable/presence_online"
-        android:tag="0"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_01" />
-
-
-    <Button
-        android:id="@+id/button_10"
-        android:layout_width="124dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:drawable/presence_online"
-        android:tag="0"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_20"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button_11"
-        android:layout_width="126dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:drawable/presence_online"
-        android:tag="0"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_21"
-        app:layout_constraintEnd_toStartOf="@+id/button_12"
-        app:layout_constraintStart_toEndOf="@+id/button_10" />
-
-    <Button
-        android:id="@+id/button_12"
-        android:layout_width="128dp"
-        android:layout_height="119dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:drawable/presence_online"
-        android:tag="0"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_22"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-
-    <Button
-        android:id="@+id/button_20"
-        android:layout_width="124dp"
-        android:layout_height="124dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:drawable/presence_online"
-        android:tag="0"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_21"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button_21"
-        android:layout_width="121dp"
-        android:layout_height="126dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:drawable/presence_online"
-        android:tag="0"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_22"
-        app:layout_constraintStart_toEndOf="@+id/button_20" />
-
-    <Button
-        android:id="@+id/button_22"
-        android:layout_width="122dp"
-        android:layout_height="128dp"
-        android:layout_marginBottom="4dp"
-        android:background="@android:drawable/presence_online"
-        android:tag="0"
-        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_21" />
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent">
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_00"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#FFFF82"
+            android:tag="0"
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/presence_online"
+            android:tag="0"
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/presence_online"
+            android:tag="0"
+            android:textSize="45sp" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/presence_online"
+            android:tag="0"
+            android:textSize="45sp" />
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/presence_online"
+            android:tag="0"
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/presence_online"
+            android:tag="0"
+            android:textSize="45sp" />
+
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/presence_online"
+            android:tag="0"
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/presence_online"
+            android:tag="0"
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/presence_online"
+            android:tag="0"
+            android:textSize="45sp" />
+
+    </TableRow>
+
+    </TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </android.support.constraint.ConstraintLayout>
